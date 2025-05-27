@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #7f8c8d;
+}
+
+.upload-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.upload-box {
+    background-color: white;
+    border: 2px dashed #3498db;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+    border-color: #2980b9;
+    background-color: #f8f9fa;
+}
+
+.upload-box img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+}
+
+.upload-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #2980b9;
+}
+
+.result-section {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.image-preview {
+    flex: 1;
+    max-width: 500px;
+}
+
+.image-preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.prediction-result {
+    flex: 1;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.prediction-result h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.result-box {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.result-box p {
+    margin-bottom: 0.5rem;
+}
+
+.result-box span {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+    .result-section {
+        flex-direction: column;
+    }
+    
+    .image-preview {
+        max-width: 100%;
+    }
+} 

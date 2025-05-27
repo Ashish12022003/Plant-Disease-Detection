@@ -1,0 +1,11 @@
+tensorflow>=2.8.0
+numpy>=1.19.5
+opencv-python==4.8.1.78
+Pillow>=8.2.0
+flask==2.3.3
+scikit-learn>=0.24.2
+pandas==2.0.3
+matplotlib>=3.3.4
+requests==2.31.0
+tqdm==4.66.1
+kaggle==1.5.16 

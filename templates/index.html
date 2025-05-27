@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Plant Disease Detection System</h1>
+            <p>Upload a plant image to detect if it's healthy or diseased</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <div class="upload-box" id="dropZone">
+                    <img src="{{ url_for('static', filename='images/upload-icon.png') }}" alt="Upload Icon" id="uploadIcon">
+                    <p>Drag and drop your image here or</p>
+                    <label for="fileInput" class="upload-button">Choose File</label>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                </div>
+            </div>
+
+            <div class="result-section" id="resultSection" style="display: none;">
+                <div class="image-preview">
+                    <img id="previewImage" src="" alt="Preview">
+                </div>
+                <div class="prediction-result">
+                    <h2>Detection Result</h2>
+                    <div class="result-box">
+                        <p>Status: <span id="predictionStatus"></span></p>
+                        <p>Confidence: <span id="confidence"></span></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 Plant Disease Detection System</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> 
